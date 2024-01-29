@@ -25,11 +25,86 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.1.3",
-        "cells": []
+        "cells": [
+          {
+            "position": {
+              "x": 680,
+              "y": 180
+            },
+            "size": {
+              "width": 390,
+              "height": 220
+            },
+            "attrs": {
+              "text": {
+                "text": "Webserver"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "2128decf-8581-47fb-a307-8d1480823059",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Process",
+              "name": "Webserver",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "privilegeLevel": "",
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "4c1a21bf-80e8-4645-992d-9e2956c47612",
+            "source": {
+              "x": 240,
+              "y": 210
+            },
+            "target": {
+              "cell": "2128decf-8581-47fb-a307-8d1480823059"
+            }
+          }
+        ]
       }
     ],
     "diagramTop": 3,
     "reviewer": "Quiesel",
-    "threatTop": 0
+    "threatTop": 1
   }
 }
