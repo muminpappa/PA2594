@@ -549,16 +549,42 @@
               "threats": [
                 {
                   "id": "5606dbb8-8a6d-4e73-aeb7-095fc4e0c6ea",
-                  "title": "Modify data sent to the API",
+                  "title": "Session Tampering",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Tampering",
-                  "description": "Requests from the frontend to the API can be modified",
+                  "description": "This threat involves unauthorized access or manipulation of user sessions, which can lead to session hijacking or session fixation attacks. If an attacker gains control over a user's session, they can impersonate the user and perform malicious actions on their behalf.",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 2,
                   "score": "4"
+                },
+                {
+                  "id": "9f46deec-8f51-4b82-a7c4-7c522defde44",
+                  "title": "Data Tampering",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "This threat involves unauthorized modification of data either in transit or at rest. Attackers may manipulate data exchanged between the Angular frontend and the Node.js server, leading to potential integrity breaches.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": "6"
+                },
+                {
+                  "id": "2f5f676b-cf71-465e-a5d9-7f9decfdc22a",
+                  "title": "Code Tampering",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Code tampering occurs when an attacker modifies the client-side (Angular) or server-side (Node.js) code to introduce malicious functionality or to manipulate the behavior of the system. This can lead to security vulnerabilities and compromise the overall system integrity.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
                 }
               ]
             },
@@ -739,6 +765,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 2
+    "threatTop": 4
   }
 }
