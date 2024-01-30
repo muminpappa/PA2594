@@ -38,8 +38,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "448b7fee-cd44-4b84-98ae-dc2b36268ff2",
             "zIndex": 1,
+            "id": "448b7fee-cd44-4b84-98ae-dc2b36268ff2",
             "data": {
               "type": "tm.Actor",
               "name": "Customer\nbrowser",
@@ -72,8 +72,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "e8d7a097-cd9b-4c04-b273-a8b8fd43c088",
             "zIndex": 2,
+            "id": "e8d7a097-cd9b-4c04-b273-a8b8fd43c088",
             "data": {
               "type": "tm.Process",
               "name": "Frontend",
@@ -117,15 +117,15 @@
               "threats": []
             },
             "id": "745deef0-4754-4e74-b9c1-2bdfa779d853",
+            "labels": [
+              "HTTP"
+            ],
             "source": {
               "cell": "448b7fee-cd44-4b84-98ae-dc2b36268ff2"
             },
             "target": {
               "cell": "e8d7a097-cd9b-4c04-b273-a8b8fd43c088"
             },
-            "labels": [
-              "HTTP"
-            ],
             "vertices": [
               {
                 "x": 270,
@@ -165,15 +165,15 @@
               "threats": []
             },
             "id": "d4636335-953c-4ed2-89a2-a9b8d0daa12b",
+            "labels": [
+              "HTTP"
+            ],
             "source": {
               "cell": "e8d7a097-cd9b-4c04-b273-a8b8fd43c088"
             },
             "target": {
               "cell": "448b7fee-cd44-4b84-98ae-dc2b36268ff2"
             },
-            "labels": [
-              "HTTP"
-            ],
             "vertices": [
               {
                 "x": 270,
@@ -202,8 +202,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "fb455b3d-7ea3-4a2c-89ea-390be1ea62c9",
             "zIndex": 13,
+            "id": "fb455b3d-7ea3-4a2c-89ea-390be1ea62c9",
             "data": {
               "type": "tm.Process",
               "name": "Express",
@@ -236,8 +236,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "d9615dc3-891f-4828-a3fa-d5ce8906f73f",
             "zIndex": 14,
+            "id": "d9615dc3-891f-4828-a3fa-d5ce8906f73f",
             "data": {
               "type": "tm.Process",
               "name": "Sequelize",
@@ -273,8 +273,8 @@
             },
             "visible": true,
             "shape": "store",
-            "id": "8d00aa0f-e232-46d9-b2fa-c0c15f716a79",
             "zIndex": 15,
+            "id": "8d00aa0f-e232-46d9-b2fa-c0c15f716a79",
             "data": {
               "type": "tm.Store",
               "name": "MarsDB",
@@ -313,8 +313,8 @@
             },
             "visible": true,
             "shape": "store",
-            "id": "3971cf2d-d9a9-4b18-95af-e48c19219b93",
             "zIndex": 16,
+            "id": "3971cf2d-d9a9-4b18-95af-e48c19219b93",
             "data": {
               "type": "tm.Store",
               "name": "File System",
@@ -353,8 +353,8 @@
             },
             "visible": true,
             "shape": "store",
-            "id": "b9f543ac-31f9-4255-9754-72d0ed136a34",
             "zIndex": 17,
+            "id": "b9f543ac-31f9-4255-9754-72d0ed136a34",
             "data": {
               "type": "tm.Store",
               "name": "SQLite",
