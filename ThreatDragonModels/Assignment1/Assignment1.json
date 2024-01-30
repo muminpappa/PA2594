@@ -658,8 +658,8 @@
                 "text": "Node.js \napplication\nserver"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -674,8 +674,35 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
-              "hasOpenThreats": false,
-              "threats": []
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "2cdcfbbe-d39d-4f8d-a5e4-82cb095db73c",
+                  "title": "SQL Injection",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "SQL injection occurs when an attacker is able to manipulate or inject malicious SQL queries into user inputs that are then executed by the SQLite database. If not properly sanitized or validated, this can lead to unauthorized access, modification, or deletion of data in the database, potentially allowing an attacker to elevate their privileges.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
+                },
+                {
+                  "id": "644d30be-305c-4acb-9e2a-af512153a605",
+                  "title": "Improper Session Management",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "In a web shop scenario, session management vulnerabilities can lead to unauthorized access to user accounts or administrative functions. If an attacker can hijack a valid session or escalate their privileges through session manipulation, they may gain unauthorized access to customer data, purchase history, or even administrative functionalities.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -804,6 +831,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 9
+    "threatTop": 12
   }
 }
