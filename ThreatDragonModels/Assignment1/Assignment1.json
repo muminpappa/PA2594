@@ -19,7 +19,7 @@
         "cells": [
           {
             "position": {
-              "x": 90,
+              "x": 20,
               "y": 160
             },
             "size": {
@@ -53,7 +53,7 @@
           },
           {
             "position": {
-              "x": 320,
+              "x": 250,
               "y": 115
             },
             "size": {
@@ -128,8 +128,8 @@
             },
             "vertices": [
               {
-                "x": 270,
-                "y": 120
+                "x": 200,
+                "y": 140
               }
             ]
           },
@@ -176,7 +176,7 @@
             },
             "vertices": [
               {
-                "x": 270,
+                "x": 200,
                 "y": 250
               }
             ]
@@ -222,12 +222,7 @@
             "labels": [
               "Websocket"
             ],
-            "vertices": [
-              {
-                "x": 550,
-                "y": 250
-              }
-            ]
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -408,7 +403,12 @@
             "labels": [
               "API\nresponses"
             ],
-            "vertices": []
+            "vertices": [
+              {
+                "x": 530,
+                "y": 260
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -536,6 +536,32 @@
                 "x": 830,
                 "y": 260
               }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Internet\nboundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "d269e7b7-5643-45f6-98db-23613db1f882",
+            "source": {
+              "x": 460,
+              "y": 90
+            },
+            "target": {
+              "x": 460,
+              "y": 520
+            },
+            "labels": [
+              "Internet\nboundary"
             ]
           },
           {
