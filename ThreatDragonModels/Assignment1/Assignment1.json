@@ -53,7 +53,7 @@
           },
           {
             "position": {
-              "x": 330,
+              "x": 320,
               "y": 115
             },
             "size": {
@@ -182,6 +182,282 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Websocket",
+              "description": "socket.io",
+              "outOfScope": false,
+              "isBidirectional": true,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "011855c9-db16-4baa-a914-5e4a7e7aec93",
+            "source": {
+              "cell": "e8d7a097-cd9b-4c04-b273-a8b8fd43c088"
+            },
+            "target": {
+              "cell": "fb455b3d-7ea3-4a2c-89ea-390be1ea62c9"
+            },
+            "labels": [
+              "Websocket"
+            ],
+            "vertices": [
+              {
+                "x": 550,
+                "y": 250
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "HTTP",
+              "description": "RESTful API",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "c5d2d276-5b66-4b2e-b463-b311ee636d65",
+            "source": {
+              "cell": "e8d7a097-cd9b-4c04-b273-a8b8fd43c088"
+            },
+            "target": {
+              "cell": "fb455b3d-7ea3-4a2c-89ea-390be1ea62c9"
+            },
+            "labels": [
+              "HTTP"
+            ],
+            "vertices": [
+              {
+                "x": 550,
+                "y": 150
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "NoSQL",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "4ac373cd-31ef-4910-8558-9d5af2fcd29b",
+            "source": {
+              "cell": "fb455b3d-7ea3-4a2c-89ea-390be1ea62c9"
+            },
+            "target": {
+              "cell": "8d00aa0f-e232-46d9-b2fa-c0c15f716a79"
+            },
+            "labels": [
+              "NoSQL"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Local file access",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "250d2f89-9f94-45f1-ab14-49f228fa62e7",
+            "source": {
+              "cell": "fb455b3d-7ea3-4a2c-89ea-390be1ea62c9"
+            },
+            "target": {
+              "cell": "3971cf2d-d9a9-4b18-95af-e48c19219b93"
+            },
+            "labels": [
+              "Local file access"
+            ],
+            "vertices": [
+              {
+                "x": 800,
+                "y": 120
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "SQL query",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "fdfc0f40-bc68-4c2d-b755-9a960a428630",
+            "source": {
+              "cell": "fb455b3d-7ea3-4a2c-89ea-390be1ea62c9"
+            },
+            "target": {
+              "cell": "b9f543ac-31f9-4255-9754-72d0ed136a34"
+            },
+            "labels": [
+              "SQL query"
+            ],
+            "vertices": [
+              {
+                "x": 800,
+                "y": 280
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "HTTP",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "3719f966-ae57-4a3d-922d-c1803a9606c2",
+            "source": {
+              "cell": "fb455b3d-7ea3-4a2c-89ea-390be1ea62c9"
+            },
+            "target": {
+              "cell": "e8d7a097-cd9b-4c04-b273-a8b8fd43c088"
+            },
+            "labels": [
+              "HTTP"
+            ]
+          },
+          {
             "position": {
               "x": 580,
               "y": 125
@@ -192,7 +468,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Express"
+                "text": "Node.js \napplication\nserver"
               },
               "body": {
                 "stroke": "#333333",
@@ -206,8 +482,8 @@
             "id": "fb455b3d-7ea3-4a2c-89ea-390be1ea62c9",
             "data": {
               "type": "tm.Process",
-              "name": "Express",
-              "description": "delivers the client-side code to browser,\nprovides backend functionality via a RESTful API",
+              "name": "Node.js \napplication\nserver",
+              "description": "Express, Sequelize, finale-rest",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
@@ -217,41 +493,7 @@
           },
           {
             "position": {
-              "x": 590,
-              "y": 320
-            },
-            "size": {
-              "width": 160,
-              "height": 130
-            },
-            "attrs": {
-              "text": {
-                "text": "Sequelize"
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "process",
-            "zIndex": 14,
-            "id": "d9615dc3-891f-4828-a3fa-d5ce8906f73f",
-            "data": {
-              "type": "tm.Process",
-              "name": "Sequelize",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "privilegeLevel": "",
-              "hasOpenThreats": false,
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 870,
+              "x": 890,
               "y": 160
             },
             "size": {
@@ -291,8 +533,8 @@
           },
           {
             "position": {
-              "x": 870,
-              "y": 43
+              "x": 890,
+              "y": 55
             },
             "size": {
               "width": 120,
@@ -331,7 +573,7 @@
           },
           {
             "position": {
-              "x": 870,
+              "x": 890,
               "y": 279
             },
             "size": {
