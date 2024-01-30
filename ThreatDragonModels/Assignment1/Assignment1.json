@@ -405,56 +405,8 @@
             ],
             "vertices": [
               {
-                "x": 530,
+                "x": 510,
                 "y": 260
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "API\nrequests",
-              "description": "RESTful API",
-              "outOfScope": false,
-              "isBidirectional": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
-            "id": "c5d2d276-5b66-4b2e-b463-b311ee636d65",
-            "source": {
-              "cell": "e8d7a097-cd9b-4c04-b273-a8b8fd43c088"
-            },
-            "target": {
-              "cell": "fb455b3d-7ea3-4a2c-89ea-390be1ea62c9"
-            },
-            "labels": [
-              "API\nrequests"
-            ],
-            "vertices": [
-              {
-                "x": 550,
-                "y": 140
               }
             ]
           },
@@ -562,6 +514,69 @@
             },
             "labels": [
               "Internet\nboundary"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "API\nrequests",
+              "description": "RESTful API",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "5606dbb8-8a6d-4e73-aeb7-095fc4e0c6ea",
+                  "title": "Modify data sent to the API",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Requests from the frontend to the API can be modified",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": "4"
+                }
+              ]
+            },
+            "id": "c5d2d276-5b66-4b2e-b463-b311ee636d65",
+            "source": {
+              "cell": "e8d7a097-cd9b-4c04-b273-a8b8fd43c088"
+            },
+            "target": {
+              "cell": "fb455b3d-7ea3-4a2c-89ea-390be1ea62c9"
+            },
+            "labels": [
+              "API\nrequests"
+            ],
+            "vertices": [
+              {
+                "x": 520,
+                "y": 140
+              }
             ]
           },
           {
@@ -724,6 +739,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 1
+    "threatTop": 2
   }
 }
