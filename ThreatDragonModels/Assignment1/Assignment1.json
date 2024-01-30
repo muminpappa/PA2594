@@ -213,15 +213,15 @@
               "threats": []
             },
             "id": "011855c9-db16-4baa-a914-5e4a7e7aec93",
+            "labels": [
+              "Websocket"
+            ],
             "source": {
               "cell": "e8d7a097-cd9b-4c04-b273-a8b8fd43c088"
             },
             "target": {
               "cell": "fb455b3d-7ea3-4a2c-89ea-390be1ea62c9"
             },
-            "labels": [
-              "Websocket"
-            ],
             "vertices": []
           },
           {
@@ -256,15 +256,15 @@
               "threats": []
             },
             "id": "4ac373cd-31ef-4910-8558-9d5af2fcd29b",
+            "labels": [
+              "NoSQL"
+            ],
             "source": {
               "cell": "fb455b3d-7ea3-4a2c-89ea-390be1ea62c9"
             },
             "target": {
               "cell": "8d00aa0f-e232-46d9-b2fa-c0c15f716a79"
-            },
-            "labels": [
-              "NoSQL"
-            ]
+            }
           },
           {
             "shape": "flow",
@@ -298,15 +298,15 @@
               "threats": []
             },
             "id": "250d2f89-9f94-45f1-ab14-49f228fa62e7",
+            "labels": [
+              "Local\nfile access"
+            ],
             "source": {
               "cell": "fb455b3d-7ea3-4a2c-89ea-390be1ea62c9"
             },
             "target": {
               "cell": "3971cf2d-d9a9-4b18-95af-e48c19219b93"
             },
-            "labels": [
-              "Local\nfile access"
-            ],
             "vertices": [
               {
                 "x": 800,
@@ -346,15 +346,15 @@
               "threats": []
             },
             "id": "2a915ac6-f6a8-48d5-90f8-fbc6a57dbd14",
+            "labels": [
+              "SQL response"
+            ],
             "source": {
               "cell": "b9f543ac-31f9-4255-9754-72d0ed136a34"
             },
             "target": {
               "cell": "fb455b3d-7ea3-4a2c-89ea-390be1ea62c9"
             },
-            "labels": [
-              "SQL response"
-            ],
             "vertices": [
               {
                 "x": 820,
@@ -394,15 +394,15 @@
               "threats": []
             },
             "id": "3719f966-ae57-4a3d-922d-c1803a9606c2",
+            "labels": [
+              "API\nresponses"
+            ],
             "source": {
               "cell": "fb455b3d-7ea3-4a2c-89ea-390be1ea62c9"
             },
             "target": {
               "cell": "e8d7a097-cd9b-4c04-b273-a8b8fd43c088"
             },
-            "labels": [
-              "API\nresponses"
-            ],
             "vertices": [
               {
                 "x": 510,
@@ -442,15 +442,15 @@
               "threats": []
             },
             "id": "fdfc0f40-bc68-4c2d-b755-9a960a428630",
+            "labels": [
+              "SQL query"
+            ],
             "source": {
               "cell": "fb455b3d-7ea3-4a2c-89ea-390be1ea62c9"
             },
             "target": {
               "cell": "b9f543ac-31f9-4255-9754-72d0ed136a34"
             },
-            "labels": [
-              "SQL query"
-            ],
             "vertices": [
               {
                 "x": 790,
@@ -472,6 +472,9 @@
               "hasOpenThreats": false
             },
             "id": "f1a13803-beb0-449d-b1bc-7666183f7c71",
+            "labels": [
+              "Storage\nboundary"
+            ],
             "source": {
               "x": 860,
               "y": 20
@@ -480,9 +483,6 @@
               "x": 850,
               "y": 530
             },
-            "labels": [
-              "Storage\nboundary"
-            ],
             "vertices": [
               {
                 "x": 830,
@@ -504,6 +504,9 @@
               "hasOpenThreats": false
             },
             "id": "d269e7b7-5643-45f6-98db-23613db1f882",
+            "labels": [
+              "Internet\nboundary"
+            ],
             "source": {
               "x": 460,
               "y": 90
@@ -511,10 +514,7 @@
             "target": {
               "x": 460,
               "y": 520
-            },
-            "labels": [
-              "Internet\nboundary"
-            ]
+            }
           },
           {
             "shape": "flow",
@@ -538,7 +538,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "API\nrequests",
-              "description": "RESTful API",
+              "description": "Requests sent from the frontend running in the user's browser to the RESTful API of the application server.",
               "outOfScope": false,
               "isBidirectional": false,
               "reasonOutOfScope": "",
@@ -585,19 +585,58 @@
                   "new": false,
                   "number": 4,
                   "score": ""
+                },
+                {
+                  "id": "4e48acb0-4f39-4e7a-9995-be46ad431ee5",
+                  "title": "Sensitive Data Exposure",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Sensitive information such as user credentials, personal details, or other confidential data may be exposed during the communication between the Angular frontend and the Node.js API. If this data is not properly protected, attackers can intercept, eavesdrop, or tamper with the communication to gain unauthorized access to sensitive information.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                },
+                {
+                  "id": "474e3e13-7f14-4aee-8fe4-50a04daf6232",
+                  "title": "API Endpoint Enumeration",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Attackers may attempt to discover and enumerate API endpoints by analyzing the communication between the frontend and the API. This can provide insights into the system's architecture and potentially expose sensitive functionalities or data endpoints that were not intended for public access.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                },
+                {
+                  "id": "f0712bc1-234b-47be-accd-68b36acad16c",
+                  "title": "Error Handling Information Leakage",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Inadequate error handling mechanisms may inadvertently reveal sensitive information about the system, such as stack traces, error messages, or internal details. Attackers can exploit these details to gather information about the system's structure, potentially aiding in crafting more targeted attacks.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
                 }
               ]
             },
             "id": "c5d2d276-5b66-4b2e-b463-b311ee636d65",
+            "labels": [
+              "API\nrequests"
+            ],
             "source": {
               "cell": "e8d7a097-cd9b-4c04-b273-a8b8fd43c088"
             },
             "target": {
               "cell": "fb455b3d-7ea3-4a2c-89ea-390be1ea62c9"
             },
-            "labels": [
-              "API\nrequests"
-            ],
             "vertices": [
               {
                 "x": 520,
@@ -765,6 +804,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 4
+    "threatTop": 9
   }
 }
