@@ -249,54 +249,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "HTTP",
-              "description": "RESTful API",
-              "outOfScope": false,
-              "isBidirectional": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
-            "id": "c5d2d276-5b66-4b2e-b463-b311ee636d65",
-            "source": {
-              "cell": "e8d7a097-cd9b-4c04-b273-a8b8fd43c088"
-            },
-            "target": {
-              "cell": "fb455b3d-7ea3-4a2c-89ea-390be1ea62c9"
-            },
-            "labels": [
-              "HTTP"
-            ],
-            "vertices": [
-              {
-                "x": 550,
-                "y": 150
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "NoSQL",
               "description": "",
               "outOfScope": false,
@@ -339,7 +291,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Local file access",
+              "name": "Local\nfile access",
               "description": "",
               "outOfScope": false,
               "isBidirectional": false,
@@ -358,12 +310,151 @@
               "cell": "3971cf2d-d9a9-4b18-95af-e48c19219b93"
             },
             "labels": [
-              "Local file access"
+              "Local\nfile access"
             ],
             "vertices": [
               {
                 "x": 800,
                 "y": 120
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "SQL response",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "2a915ac6-f6a8-48d5-90f8-fbc6a57dbd14",
+            "source": {
+              "cell": "b9f543ac-31f9-4255-9754-72d0ed136a34"
+            },
+            "target": {
+              "cell": "fb455b3d-7ea3-4a2c-89ea-390be1ea62c9"
+            },
+            "labels": [
+              "SQL response"
+            ],
+            "vertices": [
+              {
+                "x": 820,
+                "y": 220
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "API\nresponses",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "3719f966-ae57-4a3d-922d-c1803a9606c2",
+            "source": {
+              "cell": "fb455b3d-7ea3-4a2c-89ea-390be1ea62c9"
+            },
+            "target": {
+              "cell": "e8d7a097-cd9b-4c04-b273-a8b8fd43c088"
+            },
+            "labels": [
+              "API\nresponses"
+            ],
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "API\nrequests",
+              "description": "RESTful API",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "c5d2d276-5b66-4b2e-b463-b311ee636d65",
+            "source": {
+              "cell": "e8d7a097-cd9b-4c04-b273-a8b8fd43c088"
+            },
+            "target": {
+              "cell": "fb455b3d-7ea3-4a2c-89ea-390be1ea62c9"
+            },
+            "labels": [
+              "API\nrequests"
+            ],
+            "vertices": [
+              {
+                "x": 550,
+                "y": 140
               }
             ]
           },
@@ -410,51 +501,9 @@
             ],
             "vertices": [
               {
-                "x": 800,
-                "y": 280
+                "x": 790,
+                "y": 309
               }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "HTTP",
-              "description": "",
-              "outOfScope": false,
-              "isBidirectional": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
-            "id": "3719f966-ae57-4a3d-922d-c1803a9606c2",
-            "source": {
-              "cell": "fb455b3d-7ea3-4a2c-89ea-390be1ea62c9"
-            },
-            "target": {
-              "cell": "e8d7a097-cd9b-4c04-b273-a8b8fd43c088"
-            },
-            "labels": [
-              "HTTP"
             ]
           },
           {
@@ -465,27 +514,27 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "",
+              "name": "Storage\nboundary",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
             },
             "id": "f1a13803-beb0-449d-b1bc-7666183f7c71",
             "source": {
-              "x": 1000,
-              "y": 200
+              "x": 860,
+              "y": 20
             },
             "target": {
-              "x": 860,
-              "y": 500
+              "x": 850,
+              "y": 530
             },
             "labels": [
-              ""
+              "Storage\nboundary"
             ],
             "vertices": [
               {
-                "x": 840,
-                "y": 300
+                "x": 830,
+                "y": 260
               }
             ]
           },
@@ -649,6 +698,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 1
   }
 }
